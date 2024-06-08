@@ -1,6 +1,5 @@
 import { $fetch, type FetchOptions } from 'ofetch'
 
-// locals
 import QuoteModule from '~/repository/modules/quotes'
 
 interface IApiInstance {
@@ -26,16 +25,4 @@ export default defineNuxtPlugin((nuxtApp) => {
             api: modules,
         },
     }
-
-    // setup() {
-    //     const api = $fetch.create({
-    //         baseURL: 'https://dummyjson.com/' as string
-    //     })
-
-    //     return {
-    //         provide: {
-    //             api
-    //         }
-    //     }
-    // }
 })

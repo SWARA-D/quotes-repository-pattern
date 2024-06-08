@@ -25,13 +25,6 @@ type Quote = {
 }
 
 const { $api } = useNuxtApp()
-//const quoteRepo = new repository($api)
-//const { data } = await useAsyncData(() => quoteRepo.getQuotes())
 const { data } = await $api.quote.getQuotes()
-// var allQuotes: Quote[] = [];
-// function quotesFromAPI() {
-//     for (const q of data) {
-//     allQuotes.push(q);
-//   }
-// }
+
 </script>
